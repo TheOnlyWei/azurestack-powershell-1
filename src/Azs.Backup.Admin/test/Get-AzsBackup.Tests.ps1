@@ -1,3 +1,6 @@
+Import-Module Az.Accounts -Force -RequiredVersion 2.0.1
+Import-Module Az.Resources -Force
+
 $envFile = 'env.json'
 if ($TestMode -eq 'live') {
     $envFile = 'localEnv.json'

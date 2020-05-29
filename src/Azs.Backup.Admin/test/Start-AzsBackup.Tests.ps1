@@ -1,3 +1,6 @@
+Import-Module Az.Accounts -Force -RequiredVersion 2.0.1
+Import-Module Az.Resources -Force
+
 $loadEnvPath = Join-Path $PSScriptRoot 'loadEnv.ps1'
 if (-Not (Test-Path -Path $loadEnvPath)) {
     $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
