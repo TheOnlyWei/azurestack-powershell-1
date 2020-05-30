@@ -65,7 +65,6 @@ jobs:
         Import-Module Az.Accounts -Force
         Import-Module Az.Resources -Force
         .\test-module.ps1
-      pwsh: true
       workingDirectory: 'src/$(ServiceName)'
 
   - task: PowerShell@2
