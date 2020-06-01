@@ -1,3 +1,8 @@
+Import-Module "C:\Users\VssAdministrator\Documents\WindowsPowerShell\Modules\Az.Accounts\2.0.1\Az.Accounts.psd1"
+Import-Module "C:\Users\VssAdministrator\Documents\WindowsPowerShell\Modules\Az.Resources\0.10.0\Az.Resources.psd1"
+#Import-Module -Name Az.AzAccounts -RequiredVersion 2.0.1 -Force 
+#Import-Module -Name Az.Resources
+
 $envFile = 'env.json'
 Write-Host "Loading env.json"
 if ($TestMode -eq 'live') {
@@ -13,11 +18,6 @@ if (Test-Path -Path $envFilePath) {
     $env = Get-Content (Join-Path $PSScriptRoot $envFile) | ConvertFrom-Json
     $PSDefaultParameterValues=@{"*:SubscriptionId"=$env.SubscriptionId; "*:Tenant"=$env.Tenant}
 }
-
-Import-Module "C:\Users\VssAdministrator\Documents\WindowsPowerShell\Modules\Az.Accounts\2.0.1\Az.Accounts.psd1"
-Import-Module "C:\Users\VssAdministrator\Documents\WindowsPowerShell\Modules\Az.Resources\0.10.0\Az.Resources.psd1"
-#Import-Module -Name Az.AzAccounts -RequiredVersion 2.0.1 -Force 
-#Import-Module -Name Az.Resources
 
 $TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzsBackup.Recording.json'
 $currentPath = $PSScriptRoot
