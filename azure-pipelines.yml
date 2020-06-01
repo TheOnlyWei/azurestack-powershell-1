@@ -49,7 +49,7 @@ jobs:
         $DebugPreference = "Continue"
         Get-Module -ListAvailable
         Get-Module | Where-Object {$_.Name -like "AzureRm.*"} | Remove-Module
-        Import-Module -Name Az.Accounts
+        Import-Module "C:\Users\VssAdministrator\Documents\WindowsPowerShell\Modules\Az.Accounts\2.0.1\Az.Accounts.psd1"
         ./build-module.ps1
       pwsh: true
       workingDirectory: 'src/$(ServiceName)'
@@ -62,8 +62,8 @@ jobs:
         $DebugPreference = "Continue"
         Get-Module -ListAvailable
         Get-Module | Where-Object {$_.Name -like "AzureRm.*"} | Remove-Module
-        Import-Module Az.Accounts -Force
-        Import-Module Az.Resources -Force
+        Import-Module "C:\Users\VssAdministrator\Documents\WindowsPowerShell\Modules\Az.Accounts\2.0.1\Az.Accounts.psd1"
+        Import-Module "C:\Users\VssAdministrator\Documents\WindowsPowerShell\Modules\Az.Resources\0.10.0\Az.Resources.psd1"
         .\test-module.ps1
       workingDirectory: 'src/$(ServiceName)'
 
