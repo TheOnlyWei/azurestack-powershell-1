@@ -1,5 +1,3 @@
-Import-Module "C:\Users\VssAdministrator\Documents\WindowsPowerShell\Modules\Az.Accounts\2.0.1\Az.Accounts.psd1"
-Import-Module "C:\Users\VssAdministrator\Documents\WindowsPowerShell\Modules\Az.Resources\0.10.0\Az.Resources.psd1"
 #Import-Module -Name Az.AzAccounts -RequiredVersion 2.0.1 -Force 
 #Import-Module -Name Az.Resources
 
