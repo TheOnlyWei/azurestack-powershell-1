@@ -57,7 +57,7 @@ Describe 'Get-AzsBackup' {
         $backups = Get-AzsBackup
         $backups  | Should Not Be $null
         foreach ($backup in $backups) {
-            $result = $backup | Get-AzsBackup
+            $result = Get-AzsBackup -InputObject $backup
             ValidateBackup -Backup $result
             AssertBackupsAreEqual -expected $backup -found $result
         }

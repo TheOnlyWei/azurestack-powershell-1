@@ -57,7 +57,7 @@ Describe 'Get-AzsBackupConfiguration' {
         $backupLocations = Get-AzsBackupConfiguration -Top 10
         $backupLocations  | Should Not Be $null
         foreach ($backupLocation in $backupLocations) {
-            $result = $backupLocation | Get-AzsBackupConfiguration
+            $result = Get-AzsBackupConfiguration -InputObject $backupLocation
             ValidateBackupLocation -BackupLocation $result
             AssertBackupLocationsAreEqual -expected $backupLocation -found $result
         }

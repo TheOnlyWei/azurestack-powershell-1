@@ -58,7 +58,7 @@ Describe 'Restore-AzsBackup' {
         try
         {
             [System.IO.File]::WriteAllBytes($global:decryptionCertPath, [System.Convert]::FromBase64String($global:decryptionCertBase64))
-            $backup | Restore-AzsBackup -DecryptionCertPath $global:decryptionCertPath -DecryptionCertPassword $global:decryptionCertPassword -Force
+            Restore-AzsBackup -DecryptionCertPath $global:decryptionCertPath -DecryptionCertPassword $global:decryptionCertPassword -InputObject $backup -Force
         }
         finally
         {
