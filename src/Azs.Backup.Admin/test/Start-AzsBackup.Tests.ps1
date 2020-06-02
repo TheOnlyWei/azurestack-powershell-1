@@ -1,6 +1,3 @@
-#Import-Module -Name Az.AzAccounts -RequiredVersion 2.0.1 -Force 
-#Import-Module -Name Az.Resources
-
 $envFile = 'env.json'
 Write-Host "Loading env.json"
 if ($TestMode -eq 'live') {
@@ -14,7 +11,7 @@ if (Test-Path -Path (Join-Path $PSScriptRoot $envFile)) {
 $env = @{}
 if (Test-Path -Path $envFilePath) {
     $env = Get-Content (Join-Path $PSScriptRoot $envFile) | ConvertFrom-Json
-    $PSDefaultParameterValues=@{"*:SubscriptionId"=$env.SubscriptionId; "*:Tenant"=$env.Tenant}
+    $PSDefaultParameterValues = @{"*:SubscriptionId" = $env.SubscriptionId; "*:Tenant" = $env.Tenant; "*:Location" = $env.Location; "*:ResourceGroupName" = $env.ResourceGroup }
 }
 
 $TestRecordingFile = Join-Path $PSScriptRoot 'Start-AzsBackup.Recording.json'
