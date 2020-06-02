@@ -7,7 +7,9 @@ jobs:
 - job: Test
   strategy:
     maxParallel: 2
-    matrix: 
+    matrix:
+      AzureBridge:
+        ServiceName: 'Azs.AzureBridge.Admin'
       Backup:
         ServiceName: 'Azs.Backup.Admin'
   steps:
