@@ -1,0 +1,81 @@
+#Multi-configuration and multi-agent job options are not exported to YAML. Configure these options using documentation guidance: https://docs.microsoft.com/vsts/pipelines/process/phases
+
+pool:
+  vmImage: vs2017-win2016
+
+jobs:
+- job: Test
+  strategy:
+    maxParallel: 2
+    matrix:
+      Commerce:
+        ServiceName: 'Azs.Commerce.Admin'
+  steps:
+  - task: Npm@1
+    displayName: 'Install autorest@beta'
+    inputs:
+      command: 'custom'
+      verbose: false
+      customCommand: 'install -g "@autorest/autorest"'
+
+  - task: CmdLine@2
+    displayName: 'Generate'
+    inputs:
+      script: |
+        SET NODE_OPTIONS=--max-old-space-size=16684
+        autorest-beta
+      workingDirectory: 'src/$(ServiceName)'
+
+  - task: PowerShell@2
+    displayName: 'Install'
+    inputs:
+      targetType: 'inline'
+      script: |
+        $DebugPreference = "Continue"
+        Write-Host "Before install:"
+        Get-Module -ListAvailable
+        Install-Module -Name Pester -RequiredVersion 4.6.0 -Force -SkipPublisherCheck
+        Install-Module -Name Az.Accounts -Repository PSGallery -RequiredVersion 2.0.1-preview -AllowPrerelease -Force -Scope CurrentUser -AllowClobber
+        Install-Module -Name Az.Resources -Repository PSGallery -RequiredVersion 0.10.0-preview -AllowPrerelease -Force -Scope CurrentUser -AllowClobber
+        Write-Host "After install:"
+        Get-Module -ListAvailable
+      workingDirectory: 'src/$(ServiceName)'
+
+  - task: PowerShell@2
+    displayName: 'Build'
+    inputs:
+      targetType: 'inline'
+      script: |
+        $DebugPreference = "Continue"
+        Get-Module -ListAvailable
+        Get-Module | Where-Object {$_.Name -like "AzureRm.*"} | Remove-Module
+        Import-Module -Name Az.Accounts
+        ./build-module.ps1
+      pwsh: true
+      workingDirectory: 'src/$(ServiceName)'
+
+  - task: PowerShell@2
+    displayName: 'Test'
+    inputs:
+      targetType: 'inline'
+      script: |
+        $DebugPreference = "Continue"
+        Get-Module -ListAvailable
+        Get-Module | Where-Object {$_.Name -like "AzureRm.*"} | Remove-Module
+        Import-Module Az.Accounts -Force
+        Import-Module Az.Resources -Force
+        .\test-module.ps1
+      workingDirectory: 'src/$(ServiceName)'
+
+  - task: PowerShell@2
+    displayName: 'Package'
+    inputs:
+      targetType: 'inline'
+      script: './pack-module.ps1'
+      workingDirectory: 'src/$(ServiceName)'
+    
+  - task: PublishBuildArtifacts@1
+    inputs:
+      PathtoPublish: 'src/$(ServiceName)'
+      ArtifactName: 'module-$(ServiceName)'
+      publishLocation: 'Container'
