@@ -1,4 +1,8 @@
-﻿function ValidateMetrics{
+﻿$global:SkippedTests = @("TestCloseAlert")
+$global:Location = "redmond"
+$global:ResourceGroupName = "System.redmond"
+
+function ValidateMetrics{
     param(
         $Metrics
     )

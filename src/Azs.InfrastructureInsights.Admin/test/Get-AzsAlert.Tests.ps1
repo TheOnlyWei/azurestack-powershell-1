@@ -3,6 +3,7 @@ if (-Not (Test-Path -Path $loadEnvPath)) {
     $loadEnvPath = Join-Path $PSScriptRoot '..\loadEnv.ps1'
 }
 . ($loadEnvPath)
+
 $TestRecordingFile = Join-Path $PSScriptRoot 'Get-AzsAlert.Recording.json'
 $currentPath = $PSScriptRoot
 
