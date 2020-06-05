@@ -1,8 +1,8 @@
 {
-  "RegionHealths+[NoContext]+TestListRegionHealths+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01+1": {
+  "RegionHealths+[NoContext]+TestListRegionHealths+$GET+https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "1080" ],
@@ -39,10 +39,10 @@
       "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond\",\"name\":\"redmond\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"usageMetrics\":[{\"name\":\"Physical memory\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"GB\",\"value\":441.0810546875},{\"name\":\"Available\",\"unit\":\"GB\",\"value\":2.9150390625}]},{\"name\":\"Physical storage\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"TB\",\"value\":0.85683756321668625},{\"name\":\"Available\",\"unit\":\"TB\",\"value\":9.0253035500645638}]},{\"name\":\"Public IP address pools\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"One\",\"value\":37.0},{\"name\":\"Available\",\"unit\":\"One\",\"value\":218.0}]}],\"alertSummary\":{\"criticalAlertCount\":36,\"warningAlertCount\":1}}}"
     }
   },
-  "RegionHealths+[NoContext]+TestGetRegionHealth+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01+1": {
+  "RegionHealths+[NoContext]+TestGetRegionHealth+$GET+https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "1081" ],
@@ -79,10 +79,10 @@
       "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond\",\"name\":\"redmond\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"usageMetrics\":[{\"name\":\"Physical memory\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"GB\",\"value\":441.0810546875},{\"name\":\"Available\",\"unit\":\"GB\",\"value\":2.9150390625}]},{\"name\":\"Physical storage\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"TB\",\"value\":0.85683756321668625},{\"name\":\"Available\",\"unit\":\"TB\",\"value\":9.0253035500645638}]},{\"name\":\"Public IP address pools\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"One\",\"value\":37.0},{\"name\":\"Available\",\"unit\":\"One\",\"value\":218.0}]}],\"alertSummary\":{\"criticalAlertCount\":36,\"warningAlertCount\":1}}}"
     }
   },
-  "RegionHealths+[NoContext]+TestGetRegionHealth+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01+2": {
+  "RegionHealths+[NoContext]+TestGetRegionHealth+$GET+https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "1082" ],
@@ -119,10 +119,10 @@
       "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond\",\"name\":\"redmond\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"usageMetrics\":[{\"name\":\"Physical memory\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"GB\",\"value\":441.0810546875},{\"name\":\"Available\",\"unit\":\"GB\",\"value\":2.9150390625}]},{\"name\":\"Physical storage\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"TB\",\"value\":0.85683756321668625},{\"name\":\"Available\",\"unit\":\"TB\",\"value\":9.0253035500645638}]},{\"name\":\"Public IP address pools\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"One\",\"value\":37.0},{\"name\":\"Available\",\"unit\":\"One\",\"value\":218.0}]}],\"alertSummary\":{\"criticalAlertCount\":36,\"warningAlertCount\":1}}}"
     }
   },
-  "RegionHealths+[NoContext]+TestGetAllRegionHealths+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01+1": {
+  "RegionHealths+[NoContext]+TestGetAllRegionHealths+$GET+https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01+1": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "1085" ],
@@ -159,10 +159,10 @@
       "Content": "{\"id\":\"/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond\",\"name\":\"redmond\",\"type\":\"Microsoft.InfrastructureInsights.Admin/regionHealths\",\"location\":\"redmond\",\"tags\":{},\"properties\":{\"usageMetrics\":[{\"name\":\"Physical memory\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"GB\",\"value\":441.0810546875},{\"name\":\"Available\",\"unit\":\"GB\",\"value\":2.9150390625}]},{\"name\":\"Physical storage\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"TB\",\"value\":0.85683756321668625},{\"name\":\"Available\",\"unit\":\"TB\",\"value\":9.0253035500645638}]},{\"name\":\"Public IP address pools\",\"metricsValue\":[{\"name\":\"Used\",\"unit\":\"One\",\"value\":37.0},{\"name\":\"Available\",\"unit\":\"One\",\"value\":218.0}]}],\"alertSummary\":{\"criticalAlertCount\":36,\"warningAlertCount\":1}}}"
     }
   },
-  "RegionHealths+[NoContext]+TestGetAllRegionHealths+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01+2": {
+  "RegionHealths+[NoContext]+TestGetAllRegionHealths+$GET+https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "1086" ],

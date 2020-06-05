@@ -1,8 +1,8 @@
 {
-  "Alerts+[NoContext]+TestRepairAlert+$POST+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/alerts/wrongid/repair?api-version=2016-05-01+1": {
+  "Alerts+[NoContext]+TestRepairAlert+$POST+https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/alerts/wrongid/repair?api-version=2016-05-01+1": {
     "Request": {
       "Method": "POST",
-      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/alerts/wrongid/repair?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/alerts/wrongid/repair?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "1258" ],
@@ -29,7 +29,7 @@
         "X-Content-Type-Options": [ "nosniff" ],
         "Cache-Control": [ "no-cache" ],
         "Date": [ "Fri, 07 Feb 2020 21:23:09 GMT" ],
-        "Location": [ "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/healthServiceOperationResults/7f6bfe09-cb9c-4b5b-97d1-2e12472b13d8?api-version=2016-05-01" ],
+        "Location": [ "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/healthServiceOperationResults/7f6bfe09-cb9c-4b5b-97d1-2e12472b13d8?api-version=2016-05-01" ],
         "Server": [ "Microsoft-HTTPAPI/2.0" ],
         "WWW-Authenticate": [ "oYG3MIG0oAMKAQChCwYJKoZIgvcSAQICooGfBIGcYIGZBgkqhkiG9xIBAgICAG+BiTCBhqADAgEFoQMCAQ+iejB4oAMCARKicQRvWyJ1wk863fgR/cNfL4fHnsg9HqjpBONpRVrFD6IoAwcho+ovrrSup0g+QydlkPdTW2wQpM9ugtNLHHzU0L7iv2dMhsn3IiImtimu6+nKQ/UY6ZQ90soImNzNMoTyrJynNVKaTAjo3+Dc99FVH6jE" ]
       },
@@ -40,10 +40,10 @@
       "Content": null
     }
   },
-  "Alerts+[NoContext]+TestRepairAlert+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/healthServiceOperationResults/7f6bfe09-cb9c-4b5b-97d1-2e12472b13d8?api-version=2016-05-01+2": {
+  "Alerts+[NoContext]+TestRepairAlert+$GET+https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/healthServiceOperationResults/7f6bfe09-cb9c-4b5b-97d1-2e12472b13d8?api-version=2016-05-01+2": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/healthServiceOperationResults/7f6bfe09-cb9c-4b5b-97d1-2e12472b13d8?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/healthServiceOperationResults/7f6bfe09-cb9c-4b5b-97d1-2e12472b13d8?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "1258", "1259" ],
@@ -82,10 +82,10 @@
       "Content": "{\"properties\":{\"provisioningState\":\"Failed\"},\"error\":{\"code\":\"RemediateAlertFailed\",\"message\":\"Failed to remediate alert \u0027wrongid\u0027 with error message: Exception of type \u0027Microsoft.AzureStack.Common.Infrastructure.Http.Client.ErrorModel.NotFoundException\u0027 was thrown.\"}}"
     }
   },
-  "Alerts+[NoContext]+TestRepairAlert+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/healthServiceOperationResults/7f6bfe09-cb9c-4b5b-97d1-2e12472b13d8?api-version=2016-05-01+3": {
+  "Alerts+[NoContext]+TestRepairAlert+$GET+https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/healthServiceOperationResults/7f6bfe09-cb9c-4b5b-97d1-2e12472b13d8?api-version=2016-05-01+3": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/healthServiceOperationResults/7f6bfe09-cb9c-4b5b-97d1-2e12472b13d8?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/healthServiceOperationResults/7f6bfe09-cb9c-4b5b-97d1-2e12472b13d8?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "1258", "1259", "1260" ],
@@ -124,10 +124,10 @@
       "Content": "{\"properties\":{\"provisioningState\":\"Failed\"},\"error\":{\"code\":\"RemediateAlertFailed\",\"message\":\"Failed to remediate alert \u0027wrongid\u0027 with error message: Exception of type \u0027Microsoft.AzureStack.Common.Infrastructure.Http.Client.ErrorModel.NotFoundException\u0027 was thrown.\"}}"
     }
   },
-  "Alerts+[NoContext]+TestRepairAlert+$GET+https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/alerts?api-version=2016-05-01+4": {
+  "Alerts+[NoContext]+TestRepairAlert+$GET+https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/alerts?api-version=2016-05-01+4": {
     "Request": {
       "Method": "GET",
-      "RequestUri": "https://adminmanagement.redmond.ext-v.masd.stbtest.microsoft.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/alerts?api-version=2016-05-01",
+      "RequestUri": "https://management.azure.com/subscriptions/8436efc5-b1be-4ae4-996c-861ae6c21e80/resourceGroups/System.redmond/providers/Microsoft.InfrastructureInsights.Admin/regionHealths/redmond/alerts?api-version=2016-05-01",
       "Content": null,
       "Headers": {
         "x-ms-unique-id": [ "1261" ],
