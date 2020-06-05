@@ -77,7 +77,7 @@ Describe "AzsServiceHealths" -Tags @('AzsServiceHealth', 'InfrastructureInsights
         foreach ($RegionHealth in $RegionHealths) {
             $ServiceHealths = Get-AzsRPHealth -ResourceGroupName $global:ResourceGroupName -Location $RegionHealth.Name
             foreach ($serviceHealth in $ServiceHealths) {
-                $retrieved = $serviceHealth | Get-AzsRPHealth
+                $retrieved = Get-AzsRPHealth -InputObject $serviceHealth
                 AssertAzsServiceHealthsAreSame -Expected $serviceHealth -Found $retrieved
             }
         }

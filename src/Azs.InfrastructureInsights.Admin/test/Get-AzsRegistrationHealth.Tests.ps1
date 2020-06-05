@@ -99,7 +99,7 @@ Describe "ResourceHealths" -Tags @('ResourceHealth', 'InfrastructureInsightsAdmi
 
                     $infraRoleHealth | Should not be $null
 
-                    $retrieved = $infraRoleHealth | Get-AzsRegistrationHealth
+                    $retrieved = Get-AzsRegistrationHealth -InputObject $infraRoleHealth
                     AssertResourceHealthsAreSame -Expected $infraRoleHealth -Found $retrieved
                 }
             }

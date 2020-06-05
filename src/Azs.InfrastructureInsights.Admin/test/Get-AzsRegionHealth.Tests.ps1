@@ -66,7 +66,7 @@ Describe "RegionHealths" -Tags @('RegionHealth', 'InfrastructureInsightsAdmin') 
         $RegionHealths = Get-AzsRegionHealth -Location $global:Location -ResourceGroupName $global:ResourceGroupName
         foreach($RegionHealth in $RegionHealths) {
 
-            $retrieved = $RegionHealth | Get-AzsRegionHealth
+            $retrieved = Get-AzsRegionHealth -InputObject $RegionHealth
             AssertRegionHealthsAreSame -Expected $RegionHealth -Found $retrieved
         }
     }
