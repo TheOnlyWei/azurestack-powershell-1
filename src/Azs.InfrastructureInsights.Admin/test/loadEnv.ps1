@@ -12,6 +12,7 @@
 # limitations under the License.
 # ----------------------------------------------------------------------------------
 $envFile = 'env.json'
+Write-Host "Loading env.json"
 if ($TestMode -eq 'live') {
     $envFile = 'localEnv.json'
 }
