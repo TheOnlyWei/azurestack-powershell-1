@@ -87,7 +87,7 @@ Describe "Alerts" -Tags @('Alert', 'InfrastructureInsightsAdmin') {
             $Alerts = Get-AzsAlert -ResourceGroupName $global:ResourceGroupName -Location $Region.Name
 
             foreach ($Alert in $Alerts) {
-                $retrieved = Get-AzsAlert -Name $Alert.Name
+                $retrieved = Get-AzsAlert -InputObject $Alert
                 AssertAlertsAreSame -Expected $Alert -Found $retrieved
             }
         }
